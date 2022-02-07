@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
+    <item android:drawable="@color/yellow" />
+    <!-- bottom is set to bitmap height so bottom of bitmap is vertically centered -->
+    <item android:drawable="@drawable/ic_baseline_chat_24"
+        android:bottom="53dp"
+        android:height="68dp"
+        android:width="68dp"
+        android:gravity="center"/>
+</layer-list>
