@@ -6,7 +6,7 @@ The project contains two Activities: MainActivity and SecondActivity. MainActivi
 
 To reproduce the issue after process death:
 
-1. Build and run the app on an Android 12 device. Splash screen with yellow background a chat icon will be shown (chat icon is clipped, but that's irrelevant to this issue)
+1. Build and run the app on an Android 12 device. Splash screen with yellow background and a chat icon will be shown (chat icon is clipped, but that's irrelevant to this issue)
 2. Tap the button on MainActivity to open SecondActivity
 3. Tap the Home button to background the app
 4. Kill the app process with the "Terminate" button in the Android Studio Logcat window
@@ -16,4 +16,4 @@ To reproduce the issue after process death:
 **EXPECTED**: MainActivity is restored<br/>
 **ACTUAL**: The splash screen is shown, then MainActivity is restored
 
-I would not expect the splash screen to be shown at this point. App restoration should be completely transparent to the user, and they have already resumed the app from their perspective.
+I would not expect the splash screen to be shown at this point, as this is not an "entry point" to the app. App restoration should be completely transparent to the user, and they have already resumed the app from their perspective. I have not been able to reproduce this behavior on a pre-Android 12 device.
