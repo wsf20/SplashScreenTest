@@ -17,3 +17,5 @@ To reproduce the issue after process death:
 **ACTUAL**: The splash screen is shown, then MainActivity is restored
 
 I would not expect the splash screen to be shown at this point, as this is not an "entry point" to the app. App restoration should be completely transparent to the user, and they have already resumed the app from their perspective. I have not been able to reproduce this behavior on a pre-Android 12 device.
+
+Note: this behavior is also easy to reproduce with "Don't keep Activities" enabled in Developer Options.
