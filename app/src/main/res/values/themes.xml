@@ -15,11 +15,7 @@
     </style>
 
     <style name="Theme.Main" parent="Theme.App">
-        <item name="appBackground">@color/purple_200</item>
-    </style>
-
-    <style name="Theme.Launch" parent="Theme.SplashScreen">
         <item name="android:windowBackground">@drawable/launch_screen_background</item>
-        <item name="postSplashScreenTheme">@style/Theme.Main</item>
+        <item name="appBackground">@color/purple_200</item>
     </style>
 </resources>
